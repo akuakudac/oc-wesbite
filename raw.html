@@ -1,0 +1,82 @@
+<!DOCTYPE HTML>
+<!-- <html lang="en" class="sidebar-visible no-js"> -->
+<html lang="en" class="rtl theme-coal">
+	<head>
+		<meta charset="UTF-8">
+		<title>Introduction - The One Programming Language</title>
+		<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="theme-color" content="#ffffff">
+		<base href="">
+		<!-- <link rel="stylesheet" type="text/css" href="reset.min.css"> -->
+		
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+		<link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500" rel="stylesheet" type="text/css">
+	</head>
+	<body>
+	
+		<div class="page-wrapper">
+			<div class="page">
+				
+				
+
+				
+				<div id="content" class="content">
+					<main>
+						<h1>Tank girls</h1></a>
+<blockquote>
+
+    <div id="main">
+            <div id="---" name="slide">
+              <img id="frame" >
+            </div>
+     </div>
+     <div id="buttons">
+         <Button id="previous"> << </Button>
+         <button id="next"> >> </button>
+     </div>
+    </div>
+
+
+</html>
+
+<style>
+  
+img{
+  height:100%;
+  width:100%;
+}
+
+</style>
+<script>
+    var prev = document.getElementById('previous');
+var next = document.getElementById('next');
+
+var arr = ["https://images.unsplash.com/photo-1498511225742-7831d53e64b9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8c2t5JTIwcmVwbGFjZW1lbnR8ZW58MHx8MHx0ZWFsfA%3D%3D&auto=format&fit=crop&w=500&q=60" ,
+          "https://images.unsplash.com/photo-1514519334989-3d5c8b1a9f91?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8c2t5JTIwcmVwbGFjZW1lbnR8ZW58MHx8MHx8&auto=format&fit=crop&w=1000&q=60" ,
+          "https://images.unsplash.com/photo-1517483000871-1dbf64a6e1c6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8c2t5JTIwcmVwbGFjZW1lbnR8ZW58MHx8MHx3aGl0ZXw%3D&auto=format&fit=crop&w=500&q=60" ,
+          "https://images.unsplash.com/photo-1508020963102-c6c723be5764?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fHNreSUyMHJlcGxhY2VtZW50fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" ,
+          "https://images.unsplash.com/photo-1483116531522-4c4e525f504e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTV8fHNreSUyMHJlcGxhY2VtZW50fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"];
+
+var i=0;
+
+document.getElementById('frame').src=arr[0];
+
+next.addEventListener('click' , function(){
+   i++;
+  if(i > arr.length-1 ){
+    i=0;
+   }
+document.getElementById('frame').src=arr[i];
+})
+
+prev.addEventListener('click' , function(){
+  i--;
+  if(i<0){
+    i= arr.length -1;
+   }
+document.getElementById('frame').src=arr[i];
+})
+</script>
